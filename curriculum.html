@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>School Curriculum and Activities</title>
+	<style>
+		Body {
+			Font-family: Arial, sans-serif;
+			Margin: 0;
+			Padding: 0;
+		}
+
+		Header {
+			Background-color: #003366;
+			Color: white;
+			Text-align: center;
+			Padding: 20px;
+		}
+
+		H1 {
+			Margin-bottom: 0;
+		}
+
+		Nav {
+			Background-color: #cccccc;
+			Padding: 10px;
+			Margin-bottom: 20px;
+			margin-top: 0;
+		}
+		nav:hover{
+			background-color: red
+		}
+
+		Nav ul {
+			List-style-type: none;
+			Margin: 0;
+			Padding: 0;
+		}
+
+		Nav li {
+			Display: inline-block;
+			Margin-right: 20px;
+		}
+
+		Nav a {
+			Color: #003366;
+			Text-decoration: none;
+			Font-weight: bold;
+		}
+
+		Nav a:hover {
+			Color: white;
+			Background-color: #003366;
+			Padding: 5px;
+			Border-radius: 5px;
+		}
+
+		Main {
+			Margin: auto;
+			Max-width: 800px;
+			Padding: 20px;
+		}
+
+		H2 {
+			Margin-top: 0;
+		}
+
+		P {
+			Margin-bottom: 20px;
+			line-height: 1.5;
+			font-family: sans-serif;
+		}
+
+		.img-container {
+			Margin-bottom: 20px;
+			Text-align: center;
+		}
+
+		.img-container img {
+			Max-width: 100%;
+			Max-height: 200px;
+		}
+
+		Ul {
+			Margin-bottom: 20px;
+		}
+
+		Li {
+			Margin-bottom: 10px;
+		}
+
+		.footer {
+			Background-color: #f5f5f5;
+			Padding: 10px;
+			Text-align: center;
+		}
+
+		.footer p {
+			Margin-bottom: 0;
+		}
+		
+
+		header {
+			background-color: #003366;
+			color: white;
+			text-align: center;
+			padding: 20px;
+		
+		}
+
+		h1 {
+			margin-bottom: 0;
+		}
+
+		nav {
+			background-color: #cccccc;
+			padding: 10px;
+			margin-bottom: 20px;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav li {
+			display: inline-block;
+			margin-right: 20px;
+		}
+
+		nav a {
+			color: #003366;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		nav a:hover {
+			color: white;
+			background-color: #003366;
+			padding: 5px;
+			border-radius: 5px;
+		}
+
+		main {
+			margin: auto;
+			max-width: 800px;
+			padding: 20px;
+		}
+
+		h2 {
+			margin-top: 0;
+		}
+
+		p {
+			margin-bottom: 20px;
+		}
+
+		section {
+			margin-bottom: 20px;
+		}
+
+		.section-header {
+			background-color: #f2f2f2;
+			padding: 10px;
+			border-radius: 5px;
+			margin-bottom: 10px;
+		}
+
+		.section-header h3 {
+			margin: 0;
+		}
+
+		.section-content {
+			background-color: #ffffff;
+			padding: 10px;
+			border-radius: 5px;
+			box-shadow: 1px 1px 5px #cccccc;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 20px;
+		}
+
+		th, td {
+			padding: 10px;
+			text-align: left;
+			border-bottom: 1px solid #cccccc;
+			line-height: 1.5;
+		}
+
+		th {
+			background-color: #f2f2f2;
+			font-weight: normal;
+		}
+		th:hover{
+			background-color: #003366;
+			color: white;
+		}
+
+		.footer {
+			background-color: #f5f5f5;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.footer p {
+			margin-bottom: 0;}
+			body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #003366;
+			color: white;
+			text-align: center;
+			padding: 20px;
+		}
+
+		h1 {
+			margin-bottom: 0;
+		}
+
+		nav {
+			background-color: #cccccc;
+			padding: 10px;
+			margin-bottom: 20px;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav li {
+			display: inline-block;
+			margin-right: 20px;
+		}
+
+		nav a {
+			color: #003366;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		nav a:hover {
+			color: white;
+			background-color: #003366;
+			padding: 5px;
+			border-radius: 5px;
+		}
+
+		main {
+			margin: auto;
+			max-width: 800px;
+			padding: 20px;
+		}
+
+		h2 {
+			margin-top: 0;
+		}
+
+		p {
+			margin-bottom: 20px;
+		}
+
+		section {
+			margin-bottom: 20px;
+		}
+
+		.section-header {
+			background-color: #f2f2f2;
+			padding: 10px;
+			border-radius: 5px;
+			margin-bottom: 10px;
+		}
+
+		.section-header h3 {
+			margin: 0;
+		}
+
+		.section-content {
+			background-color: #ffffff;
+			padding: 10px;
+			border-radius: 5px;
+			box-shadow: 1px 1px 5px #cccccc;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 20px;
+		}
+
+		th, td {
+			padding: 10px;
+			text-align: left;
+			border-bottom: 1px solid #cccccc;
+		}
+
+		th {
+			background-color: #f2f2f2;
+			font-weight: normal;
+		}
+
+		.footer {
+			background-color: #f5f5f5;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.footer p {
+			margin-bottom: 0;
+		}
+		.img-1{
+    width: 15%;
+    margin-left: 1.9rem;
+    margin-top: -1%; 
+    border-radius: 50px;}
+      .foot{
+		background-color: thistle;
+		padding: 15px;
+		text-align: center;
+		font-family: sans-serif;
+	  }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>School Curriculum</h1>
+		<nav><img class="img-1" src="./New folder/brofo.jpg" alt="Logo">
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="Schhome.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<div class="section-header">
+				<h3>Language Arts</h3>
+			</div>
+			<div class="section-content">
+				<p>The Language Arts curriculum at our school emphasizes the development of reading, writing, speaking, and listening skills. Students read a variety of literature, including fiction and non-fiction texts, and write for a variety of purposes and audiences. The curriculum also includes grammar instruction and vocabulary development.</p>
+				<table>
+					<tr>
+						<th>Grade Level</th>
+						<th>Reading</th>
+						<th>Writing</th>
+						<th>Speaking and Listening</th>
+					</tr>
+					<tr>
+						<td>Kindergarten</td>
+						<td>Develop phonemic awareness and phonics skills; read and comprehend text</td>
+						<td>Write short narratives and informative texts; use proper capitalization, punctuation, and spelling</td>
+						<td>Participate in class discussions and oral presentations</td>
+					</tr>
+					<tr>
+						<td>1st Grade</td>
+						<td>Read and comprehend fiction and non-fiction texts; develop fluency</td>
+						<td>Write simple narratives, explanations, and opinions; use sentence structure and conventions</td>
+						<td>Listen actively in class discussions and follow oral directions</td>
+					</tr>
+					<tr>
+						<td>2nd Grade</td>
+						<td>Read and comprehend grade-level texts with accuracy and fluency; make inferences and connections</td>
+						<td>Write informative, explanatory, and narrative texts with clear topics and details; revise and edit for conventions and style</td>
+						<td>Participate in collaborative conversations and respond thoughtfully to others' ideas</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		<section>
+			<div class="section-header">
+				<h3>Mathematics</h3>
+			</div>
+			<div class="section-content">
+				<p>The Mathematics curriculum at our school develops students' understanding of concepts and skills related to numbers, operations, geometry, measurement, and data analysis. Students engage in problem-solving activities and develop reasoning and critical thinking skills.</p>
+				<table>
+					<tr>
+						<th>Grade Level</th>
+						<th>Numbers and Operations</th>
+						<th>Geometry and Measurement</th>
+						<th>Data Analysis and Probability</th>
+					</tr>
+					<tr>
+						<td>Kindergarten</td>
+						<td>Understand numbers 1-10; develop counting skills</td>
+						<td>Identify and describe 2D and 3D shapes; understand spatial relationships</td>
+						<td>Collect and organize data; understand chance and randomness</td>
+					</tr>
+					<tr>
+						<td>1st Grade</td>
+						<td>Add and subtract within 20; understand place value</td>
+						<td>Identify and describe 2D and 3D shapes; understand fractions and partitioning</td>
+						<td>Collect and record data; understand probability</td>
+					</tr>
+					<tr>
+						<td>2nd Grade</td>
+						<td>Add and subtract within 100; understand place value</td>
+						<td>Identify and describe 2D and 3D shapes; understand symmetry and congruence</td>
+						<td>Collect and represent data using graphs; understand likelihood and outcomes</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		<section>
+			<div class="section-header">
+				<h3>Science</h3>
+			</div>
+			<div class="section-content">
+				<p>The Science curriculum at our school focuses on inquiry-based learning, where students explore and investigate scientific concepts and ideas. Students learn about physical, earth, and life sciences, as well as scientific inquiry and investigation.</p>
+				<table>
+					<tr>
+						<th>Grade Level</th>
+						<th>Physical Science</th>
+						<th>Earth Science</th>
+						<th>Life Science</th>
+						<th>Scientific Inquiry and Investigation</th>
+					</tr>
+					<tr>
+						<td>Kindergarten</td>
+						<td>Understand the properties of objects and materials; explore motion and forces</td>
+						<td>Observe and describe weather and the changing seasons; understand basic Earth geology and mineral identification</td>
+						<td>Explore and compare plants and animals; understand habitats and ecosystems</td>
+						<td>Pose questions and make observations; plan and carry out simple investigations; communicate results</td>
+					</tr>
+					<tr>
+						<td>1st Grade</td>
+						<td>Understand the physical properties of matter; explore sound and light</td>
+						<td>Observe and describe the Moon, stars, and space; understand simple geological processes and rock identification</td>
+						<td>Compare and classify different animals and their adaptations; understand basic plant structures and functions</td>
+						<td>Pose questions and plan investigations; collect and analyze data; draw conclusions and communicate results</td>
+					</tr>
+					<tr>
+						<td>2nd Grade</td>
+						<td>Understand basic energy concepts and transformations; explore matter and its changes</td>
+						<td>Observe and describe the water cycle and its effect on the environment; understand basic weather patterns and climate</td>
+						<td>Explore relationships between organisms and their environments; understand basic human anatomy and health</td>
+						<td>Pose questions and make predictions; design and conduct investigations; analyze and interpret data; communicate findings</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<p>&copy; 2023 School Curriculum</p>
+	</footer>
+
+	<header>
+		<h1>School Curriculum and Activities</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="extra.html">Extra Curriculum</a></li>
+			<li><a href="activities.html">Activities</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2 id=”curriculum”>Curriculum</h2>
+		<p>Our school curriculum is designed to provide a comprehensive education to our students that prepares them for a successful future. We offer a wide range of courses, including:</p>
+		<ul>
+			<li>English Language Arts</li>
+			<li>Mathematics</li>
+			<li>Science</li>
+			<li>Social Studies</li>
+			<li>Foreign Languages</li>
+			<li>Physical Education</li>
+			<li>Visual and Performing Arts</li>
+		</ul>
+		<p>Our teachers are highly qualified and experienced in their respective fields, and they are committed to providing a challenging and engaging curriculum to all students.</p>
+
+		<h2 id="activities">Activities</h2>
+		<p>Our school offers a variety of extracurricular activities to enrich the educational experience of our students. We believe that extracurricular activities are an important part of a well-rounded education and provide students with opportunities to develop their talents and interests.</p>
+		<ul>
+			<li>Athletics, such as basketball, volleyball, and cross country</li>
+			<li>Music programs, including band, choir, and orchestra</li>
+			<li>Clubs for art, drama, debate, and more</li>
+			<li>Community service projects</li>
+			<li>Field trips and educational travel opportunities</li>
+		</ul>
+		<p>Our extracurricular activities are led by highly qualified and dedicated teachers and coaches who are committed to helping students develop their skills and interests outside of the classroom.</p>
+
+		<h2>Contact Us</h2>
+		<ul>
+			<li>Address: Aumako Brofoyedur</li>
+			<li>Phone: 0549412410</li>
+			<li>Email: info@school.com</li>
+		</ul>
+	</main>
+	<footer class="foot">
+		<p>&copy; 2023 School Curriculum and Activities</p>
+	</footer>
+</body>
+</html>

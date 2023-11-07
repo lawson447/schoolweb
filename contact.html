@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+         body{
+            font-family: sans-serif;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        .sidebar{
+            position: fixed;
+            left: -250px;
+            width: 230px;
+            height: 70%;
+            background: #0a5275;
+            transition: all .5s;
+        }
+        .sidebar header{
+            font-size: 22px;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            background: #063146;
+            user-select: none;
+        }
+        .sidebar ul a{
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 65px;
+            color: white;
+            padding-left: 40px;
+            box-sizing: border-box;
+            border-top: 1px solid rgba(255, 255, 255, .1);
+            border-bottom: 1px solid black;
+            transition: .4s;
+            font-size: 20px;
+        }
+        ul li:hover a {
+            padding-left: 50px;
+        }
+        .sidebar ul a i{
+            margin-right: 16px;
+        }
+        #check{
+            display: none;
+        }
+       label #btn{
+        left: 40px;
+        top: 25px;
+        font-size: 35px;
+        color: white;
+        padding: 6px 12px;
+        transition: all .5s;
+       }
+       label #cancel{
+        z-index: 1111;
+        left: -195;
+        font-size: 30px;
+        top: 17px;
+        color: #0a5275;
+        padding: 4px ppx;
+        transition: all .5s ease;
+       }
+       #check:checked ~ .sidebar{
+        left: 0;
+       }
+       label #btn,label #cancel{
+        position: absolute;
+        cursor: pointer;
+        background: #042331;
+        border-radius: 3px;
+       }
+       #check:checked ~ label #btn{
+        left: 250px;
+        opacity: 0;
+        pointer-events: none;
+       }
+       #check:checked ~ label #cancel{
+        left: 195;
+       }
+       section{
+        background: url(./Pages-from-820-North-America-Street-CYC3-PLANS.pdf_Page_1_Image_0001-scaled.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 50vh;
+        transition: all .5s;
+       }
+       #check:checked ~ section{
+        margin-left: 250px;}
+    </style>
+</head>
+<body>
+    <input type="checkbox"id="check">
+    <label for="check">
+        <i class="fa fa-bars" id="btn"></i>
+        <i class="fa fa-bars" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Menu</header>
+        <ul>
+            <li><a href="./Schhome.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="./event.html"><i class="fa fa-link"></i>Events</a></li>
+            <li><a href="./facilities.html"><i class="fa fa-car"></i>facilities</a></li>
+            <li><a href="./libray.html"><i class="fa fa-bars"></i>library</a></li>
+            <li><a href="./gallry.html"><i class="fa fa-building"></i>Gallery</a></li>
+        </ul>
+    </div>
+    <section>
+       
+    </section>
+       <div class="container">
+        <h1 style="text-indent: 95px;">Connect With Us</h1>
+        <p style="text-indent: 95px;">We would love to respond to your queries and help you succeed.Feel free to get in touch with us</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Send your request</h3>
+                <form >
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" required autofocus placeholder="Nana Lawson">
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="number" required placeholder="+233549412410">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" required placeholder="nanalawson@email.com">
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="number" placeholder="+233549412410">
+                        </div>
+                    </div>
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Reach Us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>Contact@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+233594411680</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>Post office 24, Ajumako</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+       </div>
+</body>
+</html>

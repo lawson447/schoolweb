@@ -1,0 +1,106 @@
+Body {
+  Font-family: ‘Montserrat’, sans-serif;
+  Margin: 0;
+  Display: grid;
+  Height: 100vh;
+  Place-items: center;
+  Background: #f0f0f0;
+}
+
+.container {
+  Position: relative;
+  Width: 100%;
+  Max-width: 900px;
+  Background: #fff;
+  Border-radius: 10px;
+  Box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  Overflow: hidden;
+}
+
+.form-container {
+  Width: 100%;
+  Padding: 0 50px;
+  Box-sizing: border-box;
+  Text-align: center;
+}
+
+Form {
+  Display: grid;
+  Gap: 20px;
+  Margin-top: 50px;
+}
+
+H1 {
+  Color: #333;
+}
+
+Input {
+  Width: 100%;
+  Padding: 10px;
+  Box-sizing: border-box;
+  Border: 1px solid #ccc;
+  Border-radius: 5px;
+}
+
+Button {
+  Width: 100%;
+  Padding: 10px;
+  Color: #fff;
+  Background: #333;
+  Border: none;
+  Border-radius: 5px;
+  Cursor: pointer;
+}
+
+A {
+  Color: #333;
+  Text-decoration: none;
+}
+
+.overlay-container {
+  Position: absolute;
+  Top: 0;
+  Left: 50%;
+  Width: 50%;
+  Height: 100%;
+  Overflow: hidden;
+  Transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.overlay {
+  Position: relative;
+  Width: 200%;
+  Height: 100%;
+  Transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+  Position: absolute;
+  Top: 0;
+  Left: 50%;
+  Width: 50%;
+  Height: 100%;
+  Transform: translateX(-50%);
+  Display: flex;
+  Flex-direction: column;
+  Justify-content: center;
+  Align-items: center;
+}
+
+.overlay-left {
+  Transform: translateX(-100%);
+}
+
+.overlay-right {
+  Transform: translateX(0);
+}
+
+.ghost {
+  Background: transparent;
+  Border: 1px solid #333;
+  Color: #333;
+}
+img{
+  width: 200px;
+}

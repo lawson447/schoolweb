@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: 0%;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 500px;
+    height: auto;
+   
+}
+
+.fade {
+    animation: fade 2s ease-in-out infinite;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+Body {
+    Font-family: Arial, sans-serif;
+    Margin: 0;
+    Padding: 0;
+  }
+
+  Header {
+    Background-color: #333;
+    Color: #fff;
+    Text-align: center;
+    Padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  H1 {
+    Margin: 0;
+  }
+
+  .container {
+    Max-width: 960px;
+    Margin: 20px auto;
+    Padding: 20px;
+    
+  }
+
+  .activity {
+    Margin-bottom: 40px;
+   
+  }
+
+  .activity img {
+    Max-width: 100%;
+    Height: auto;
+  }
+
+  .activity h2 {
+    Margin-top: 10px;
+  }
+
+  .activity p {
+    Margin-top: 5px;
+  }
+ .p h2 p{
+    display: flex;
+    flex-direction: column;
+   color: red;
+ }
+ img{
+    margin: 10px;
+ }
+ 

@@ -1,0 +1,100 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.wrapper{
+    background: url(pic\ \(2\).jpg)
+    no-repeat center center;
+        min-height: 15rem;}
+        nav{
+            width: 100%;
+            height: 80px;
+            background-color: #0005;
+            line-height: 80px;
+        }
+        nav ul{
+            float: right;
+            margin: 0;
+            margin-right: 1.9rem;
+        
+        }
+        nav ul li{
+            list-style-type: none;
+            display: inline-block;
+        
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #fff;
+                padding: 20px;}
+                nav ul li:hover{
+                 background-color: #008080;
+                 color: #000;
+                 font-weight: normal;
+                 font-size: 1.2rem;}
+            h3{
+                text-align: center;
+                color: white;
+                line-height: 30px;
+                background: url(./Pages-from-820-North-America-Street-CYC3-PLANS.pdf_Page_1_Image_0001-scaled.jpg);
+                padding: 25px;
+                margin-top: 0.5%;
+                font-family: sans-serif;
+            }
+            h2{
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-top: 0.5%;
+            }
+            li{
+                font-family: sans-serif;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            p{
+                line-height: 1.7;
+                font-family: sans-serif;}
+    footer{
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        margin-top: 4%;
+        padding: 1.2rem;}
+       img{
+        width: 40%;
+        padding: 20px;
+        margin-right: 0;
+        margin-left: 0;
+       }
+    .img-2{
+        width: 350px;
+        padding-left: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+   .image{
+    display: flexbox;
+    width: 250px;
+    padding: 15px;
+   }
+   label{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 20px;
+    font-size: large;
+   }
+   .img-1{
+    width: 5%;
+    margin-left: 1.9rem;
+    margin-top: -1%; 
+    border-radius: 50px;
+    text-align: right;
+    align-items: end;
+    
+   
+}

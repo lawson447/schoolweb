@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS for Photo Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .gallery-item {
+      margin: 5px;
+    }
+
+    .gallery-item img {
+      width: 200px;
+      height: auto;
+    }
+
+    /* CSS for Sub-Gallery */
+    .sub-gallery {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .sub-gallery.fade-in {
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .sub-gallery.slide-up {
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      transform: translateY(50px);
+    }
+
+    .sub-gallery.active {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .sub-gallery-item {
+      margin: 5px;
+    }
+
+    .sub-gallery-item img {
+      width: 150px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h2>Photo Gallery</h2>
+
+  <!-- Main Gallery -->
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="MUS.jpg" alt="Image 1">
+    </div>
+    <div class="gallery-item">
+      <img src="NETBALL2.jpg" alt="Image 2">
+    </div>
+    <div class="gallery-item">
+      <img src="COMP.jpg" alt="Image 3">
+    </div>
+  </div>
+
+  <!-- Sub-Gallery 1 -->
+  <div class="sub-gallery fade-in" id="sub-gallery1">
+    <div class="sub-gallery-item">
+      <img src="FOOTBALL.jpg" alt="Sub-Image 1">
+    </div>
+    <div class="sub-gallery-item">
+      <img src="NETBALL.jpg" alt="Sub-Image 2">
+    </div>
+    <div class="sub-gallery-item">
+      <img src="GRUD.jpg" alt="Sub-Image 3">
+    </div>
+  </div>
+
+  <!-- Sub-Gallery 2 -->
+  <div class="sub-gallery slide-up" id="sub-gallery2">
+    <div class="sub-gallery-item">
+      <img src="NETBALL.jpg" alt="Sub-Image 4">
+    </div>
+    <div class="sub-gallery-item">
+      <img src="NETBALL.jpg" alt="Sub-Image 5">
+    </div>
+    <div class="sub-gallery-item">
+      <img src="NETBALL.jpg" alt="Sub-Image 6">
+    </div>
+  </div>
+
+  <!-- Sub-Gallery 3 -->
+  <div class="sub-gallery fade-in" id="sub-gallery3">
+    <div class="sub-gallery-item">
+      <img src="GRD.jpg" alt="Sub-Image 7">
+    </div>
+    <div class="sub-gallery-item">
+      <img src="NETBALL5.png" alt="Sub-Image 8">
+    </div>
+    <div class="sub-gallery-item">
+      <img src="subimage9.jpg" alt="Sub-Image 9">
+    </div>
+  </div>
+
+  <script>
+    // JavaScript for Gallery Interaction
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const subGalleries = document.querySelectorAll('.sub-gallery');
+
+    galleryItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        subGalleries.forEach((subGallery) => {
+          subGallery.classList.remove('active');
+        });
+        subGalleries[index].classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
